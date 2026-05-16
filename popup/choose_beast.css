@@ -3,14 +3,15 @@ body {
   width: 100px;
 }
 
-.hidden { display: hidden; }
+.hidden { display: none; }
 
 button {
   border: none;
-  width: 100px;
+  width: 100%;
   margin: 3% auto;
   padding: 4px;
-  text-align: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
   cursor: pointer;
   background-color: #e5f2f2;
 }

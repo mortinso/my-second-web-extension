@@ -24,7 +24,7 @@
 
 	browser.runtime.onMessage.addListener((message) => {
 		if (message.command === "beastify") {
-			insertBeast(message.BeastURL);
+			insertBeast(message.beastURL);
 		} else if (message.command === "reset") {
 			removeExistingBeasts();
 		}

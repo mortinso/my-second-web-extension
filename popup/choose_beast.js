@@ -1,5 +1,5 @@
 // CSS to hide everything thats not the beast
-const hidePage = `body > :not(.beastify_image) {
+const hidePage = `body > :not(.beastify-image) {
                    display: none !important;
                   }`;
 
@@ -9,17 +9,17 @@ function listenForClicks() {
   document.addEventListener("click", async (e) => {
     function beastNameToURL(beastName) {
       switch (beastName) {
-        case "Option1":
-          return browser.runtime.getURL("beasts/option1.jpg");
-	case "Option2":
-          return browser.runtime.getURL("beasts/option2.jpg");
-        case "Option3":
-          return browser.runtime.getURL("beasts/option3.jpg");
+        case "Frog":
+          return browser.runtime.getURL("beasts/frog.jpg");
+	case "Snake":
+          return browser.runtime.getURL("beasts/snake.jpg");
+        case "Turtle":
+          return browser.runtime.getURL("beasts/turtle.jpg");
       }
     }
 
     async function beastify(tab) {
-      await browser.scritpting.insertCSS({
+      await browser.scripting.insertCSS({
         target: { tabId: tab.id },
         css: hidePage,
       });
