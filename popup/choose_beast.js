@@ -66,7 +66,7 @@ function listenForClicks() {
 }
 
 // Show error message in popup
-function reportExecuteScriptingError(error) {
+function reportExecuteScriptError(error) {
   document.querySelector("#popup-content").classList.add("hidden");
   document.querySelector("#error-content").classList.remove("hidden");
   console.error(`Failed to execute beastify content script: ${error.message}`);
