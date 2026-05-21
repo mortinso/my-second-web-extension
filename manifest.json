@@ -3,7 +3,7 @@
   "manifest_version": 3,
   "name": "Beastify",
   "version": "1.0",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/main/master/beastify",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/main/beastify",
   "icons": {
     "48": "icons/beasts-48.png",
     "96": "icons/beasts-96.png"
